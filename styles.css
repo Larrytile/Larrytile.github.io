@@ -1,0 +1,234 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 5px; /* Increased padding for better spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 80px; /* Adjusted logo height */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url('C:/Users/natha/Pictures/Tiling/Flooring/floor60x60.jpg'); /* Adjust the path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #ffffff; /* Set text color to white */
+    text-align: center; /* Center align the text */
+    padding: 100px 20px; /* Add padding to create space inside the hero section */
+    position: relative; /* Ensure positioning for overlay if needed */
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#hero h2, #hero p {
+    position: relative;
+    z-index: 2;
+}
+
+#services {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#services h2 {
+    margin-bottom: 15px;
+}
+
+#services ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#services li {
+    text-align: center;
+    width: 45%; /* Adjusted width for better responsiveness */
+    margin-bottom: 20px;
+}
+
+#services img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#services span {
+    display: block;
+    margin-top: 10px;
+}
+
+#about {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px 20px; /* Adjusted padding for smaller screens */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Adjusted flex direction for smaller screens */
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content .thumbnail {
+    width: 100%; /* Adjusted thumbnail width for smaller screens */
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-content .text-content {
+    max-width: 100%; /* Adjusted text content width for smaller screens */
+    text-align: left;
+}
+
+#contact {
+    background-color: #fff;
+    padding: 40px 20px; /* Adjusted padding for smaller screens */
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#contact h2 {
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
+}
+
+#contact p {
+    margin-bottom: 20px; /* Adjusted margin for smaller screens */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Adjusted header padding for smaller screens */
+    }
+
+    .logo {
+        height: 60px; /* Adjusted logo height for smaller screens */
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Adjusted margin for smaller screens */
+    }
+
+    #hero {
+        padding: 60px 20px; /* Adjusted hero padding for smaller screens */
+    }
+
+    #services li {
+        width: 100%; /* Full width for list items on smaller screens */
+    }
+
+    #services img {
+        width: 100%;
+    }
+
+    #about {
+        padding: 30px 20px; /* Adjusted about section padding for smaller screens */
+    }
+
+    .about-content .thumbnail {
+        max-width: 150px; /* Adjusted thumbnail max-width for smaller screens */
+    }
+
+    #contact {
+        padding: 30px 20px; /* Adjusted contact section padding for smaller screens */
+    }
+
+    #contact p {
+        margin-bottom: 10px; /* Further adjusted margin for smaller screens */
+    }
+}
