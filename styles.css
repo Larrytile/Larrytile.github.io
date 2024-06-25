@@ -1,0 +1,218 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 100px; /* Adjust this value to fit your logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#hero {
+    background-image: url('C:/Users/natha/Pictures/Tiling/Flooring/floor60x60.jpg'); /* Adjust the path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #ffffff; /* Set text color to white */
+    text-align: center; /* Center align the text */
+    padding: 100px 20px; /* Add padding to create space inside the hero section */
+    position: relative; /* Ensure positioning for overlay if needed */
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+    z-index: 1;
+}
+
+#hero h2, #hero p {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+}
+
+
+}
+
+#services {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#services h2 {
+    margin-bottom: 15px;
+}
+
+#services ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#services li {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#services img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#services span {
+    display: block;
+    margin-top: 10px;
+}
+
+#about {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about {
+    background-color: #ffffff; /* White background for contrast */
+    text-align: center;
+    padding: 50px 20px; /* Adjust padding to create space */
+    margin-top: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center content horizontally */
+}
+
+.about-content .thumbnail {
+    max-width: 100%; /* Ensure the thumbnail image doesn't exceed its container */
+    margin-right: 20px; /* Add spacing between image and text content */
+}
+
+.about-content .text-content {
+    max-width: 600px; /* Adjust the width of the text content */
+    text-align: left; /* Align text to the left */
+}
+
+
+.thumbnail {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the image circular if desired */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.text-content {
+    flex: 1; /* Take up remaining space */
+}
+
+.text-content p {
+    text-align: left; /* Align text to the left */
+}
+
+
+
+#contact {
+    background-color: #fff;
+    padding: 100px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+
+#contact h2 {
+    margin-bottom: 5px; /* Adjust the margin bottom as needed */
+}
+
+#contact p {
+    margin-bottom: 10px; /* Adjust the margin bottom as needed */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Same background color as header */
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed; /* Use 'fixed' instead of 'absolute' */
+    bottom: 0;
+    width: 100%;
+}
+
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
