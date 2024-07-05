@@ -139,18 +139,6 @@ header {
     position: relative;
 }
 
-/* Hero section styles */
-#hero {
-    background-image: url('C:/Users/natha/Pictures/Tiling/Flooring/floor60x60.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    text-align: center;
-    padding: 100px 20px;
-    position: relative;
-}
-
 #hero::before {
     content: "";
     position: absolute;
