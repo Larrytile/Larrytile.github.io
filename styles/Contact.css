@@ -1,0 +1,83 @@
+/* Contact section styles */
+#contact {
+    background-color: #fff; /* Background color of the contact section */
+    padding: 40px 20px; /* Padding around the content */
+    margin-top: 20px; /* Space above the contact section */
+    border-radius: 5px; /* Rounded corners for the section */
+    border: 1px solid #ddd; /* Light border to define the section */
+}
+
+#contact h2 {
+    margin-bottom: 10px; /* Space below the heading */
+    font-size: 1.5rem; /* Font size for the heading */
+}
+
+#contact p {
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+#contact ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+#contact ul li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1rem; /* Font size for list items */
+}
+
+#contact ul li strong {
+    color: #333; /* Text color for the strong tag */
+}
+
+#contact ul li a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#contact ul li a:hover {
+    color: #0056b3; /* Link color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styles for the Facebook logo */
+.facebook-link {
+    color: #4267B2; /* Facebook brand color */
+    display: inline-flex; /* Align the logo and text horizontally */
+    align-items: center; /* Center align the text and logo */
+}
+
+.facebook-link img {
+    width: 1em; /* Set the width of the Facebook logo to match the font size */
+    height: 1em; /* Set the height of the Facebook logo to match the font size */
+    vertical-align: middle; /* Align the icon with the text */
+    margin-right: 0.5em; /* Space between the icon and the text */
+}
+
+.facebook-link:hover {
+    color: #365899; /* Darker Facebook color on hover */
+}
+
+.facebook-link:hover img {
+    opacity: 0.8; /* Slightly fade the logo on hover */
+}
+
+/* Optional Responsive Media Queries */
+@media (max-width: 768px) {
+    #contact {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+
+    #contact h2 {
+        font-size: 1.25rem; /* Smaller font size for the heading on small screens */
+    }
+
+    #contact p {
+        margin-bottom: 15px; /* Adjust space below the paragraph */
+    }
+
+    #contact ul li {
+        font-size: 0.9rem; /* Slightly smaller font size for list items */
+    }
+}
