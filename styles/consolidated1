@@ -136,20 +136,22 @@ header {
 #services ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Enable flex wrap */
     justify-content: space-around;
     padding: 0;
 }
 
 #services li {
     text-align: center;
-    flex: 1 0 auto;
-    margin: 0 10px;
+    flex: 1 0 21%; /* Adjust the flex-basis to fit 4 items in a row */
+    margin: 10px 10px; /* Adjust margin for spacing */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 #services img {
     max-width: 100%;
     height: auto;
-    width: 150px;
+    width: 150px; /* Optional: you can adjust this width based on design preference */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -159,16 +161,22 @@ header {
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-    #services {
-        flex-wrap: wrap;
-    }
+/* Media Queries */
 
+/* 2x2 layout for tablets and small desktops */
+@media (max-width: 992px) {
     #services li {
-        flex: 1 0 50%;
-        margin: 10px 0;
+        flex: 1 0 46%; /* Adjust the flex-basis to fit 2 items in a row */
     }
 }
+
+/* 1x4 layout for mobile devices */
+@media (max-width: 600px) {
+    #services li {
+        flex: 1 0 100%; /* Adjust the flex-basis to fit 1 item in a row */
+    }
+}
+
 
 /* About section styles */
 #about {
