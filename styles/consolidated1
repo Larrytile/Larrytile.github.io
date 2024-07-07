@@ -1,0 +1,390 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Link styles */
+a {
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+a:hover {
+    color: #6F86FF;
+}
+
+/* Basic styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    height: 80px;
+}
+
+.menu-toggle, .close-menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.menu-toggle:focus, .close-menu-btn:focus {
+    outline: none;
+}
+
+/* Navigation styles */
+.nav-links, .off-screen-menu nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links li, .off-screen-menu nav ul li {
+    margin: 10px 0;
+}
+
+.nav-links li a, .off-screen-menu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover, .off-screen-menu nav ul li a:hover {
+    color: #6F86FF;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero section styles */
+#hero {
+    background-image: url('/images/floor60x60.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#hero h2, #hero p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Services section styles */
+#services {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#services ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#services li {
+    text-align: center;
+    flex: 1 0 auto;
+    margin: 0 10px;
+}
+
+#services img {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#services span {
+    display: block;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    #services {
+        flex-wrap: wrap;
+    }
+
+    #services li {
+        flex: 1 0 50%;
+        margin: 10px 0;
+    }
+}
+
+/* About section styles */
+#about {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content .thumbnail {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-content .text-content {
+    max-width: 100%;
+    text-align: left;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#contact h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#contact ul li strong {
+    color: #333;
+}
+
+#contact ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.facebook-link {
+    color: #4267B2;
+    display: inline-flex;
+    align-items: center;
+}
+
+.facebook-link img {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.facebook-link:hover {
+    color: #365899;
+}
+
+.facebook-link:hover img {
+    opacity: 0.8;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form styles */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    #hero {
+        padding: 60px 20px;
+    }
+
+    #services li {
+        width: 100%;
+    }
+
+    #about {
+        padding: 30px 20px;
+    }
+
+    .about-content .thumbnail {
+        max-width: 150px;
+    }
+
+    #contact {
+        padding: 30px 20px;
+    }
+
+    #contact p {
+        margin-bottom: 10px;
+    }
+}
+
+/* Off-screen menu styles */
+.off-screen-menu {
+    background-color: rgb(34, 37, 49);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+    z-index: 1000;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #6F86FF;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
