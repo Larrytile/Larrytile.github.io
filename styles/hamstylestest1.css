@@ -705,3 +705,26 @@ form button:hover {
         margin-bottom: 10px; /* Further adjusted margin for smaller screens */
     }
 }
+
+/* Styles specific to hamstylestest1.css */
+
+/* Header styles */
+header {
+    position: fixed; /* Added */
+    top: 0; /* Added */
+    width: 100%; /* Added */
+    z-index: 1000; /* Added to ensure the header is above other content */
+}
+
+/* Adjust body padding to account for fixed header */
+body {
+    padding-top: 80px; /* Amended: added top padding */
+}
+
+/* Hero section styles */
+#hero {
+    margin-top: 60px; /* Added to ensure it doesn't overlap with the fixed header */
+}
+
+/* Other home page specific styles... */
+
