@@ -501,4 +501,38 @@ form button:hover {
         max-width: 300px; /* Optional: Set a max-width for images */
     }
 }
+/* Add this to ensure the header stays on screen */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Added */
+    top: 0; /* Added */
+    width: 100%; /* Added */
+    z-index: 1000; /* Added to ensure the header is above other content */
+}
+
+/* Add padding to the body to prevent content from being hidden under the fixed header */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 80px 20px 20px 20px; /* Amended: added top padding */
+}
+
+/* Adjust hero section padding to account for the fixed header */
+#hero {
+    background-image: url('/images/floor60x60.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    margin-top: 60px; /* Added */
+}
 
