@@ -441,16 +441,26 @@ form button:hover {
     display: flex;
     justify-content: center;
     gap: 20px; /* Space between the videos */
+    flex-wrap: wrap; /* Allow wrapping if needed */
 }
 
 .project-video {
     flex: 1 1 45%; /* Allow videos to take up equal space */
+    display: flex;
+    flex-direction: column; /* Stack video and text vertically */
+    align-items: center; /* Center the content */
 }
 
 .project-video video {
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-description {
+    margin-top: 10px; /* Space between the video and text */
+    text-align: center; /* Center the text if desired */
+    width: 100%; /* Ensure the text takes the full width of the container */
 }
 
 /* Media Queries */
