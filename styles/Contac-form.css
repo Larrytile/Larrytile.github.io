@@ -1,0 +1,47 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 640px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .contact-form iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-section {
+        margin: 10px;
+    }
+}
