@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTtiling</title>
+    <link rel="stylesheet" href="styles/chat1.css">
+    <link rel="stylesheet" href="styles/hamstylestest1.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/Consolidated1.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/LT tiling Logov1.PNG" alt="LTtiling Logo" class="logo">
+        </div>
+        <button class="menu-toggle ham-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="off-screen-menu">
+        <button class="close-menu-btn" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="Bathrooms.html">Bathroom</a></li>
+                <li><a href="Flooring.html">Flooring</a></li>
+                <li><a href="Kitchens.html">Kitchen</a></li>
+                <li><a href="Repairs.html">Repairs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Professional Tiling Solutions</h2>
+            <p>Quality tiling services for your home and business.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me through the following channels:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:larrytile@protonmail.com">larrytile@protonmail.com</a></li>
+            <li><strong>Facebook:</strong> <a href="https://www
