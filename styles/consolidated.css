@@ -125,6 +125,8 @@ header {
     z-index: 2;
 }
 
+/* Other existing styles */
+
 /* Services section styles */
 #services {
     background-color: #fff;
@@ -136,14 +138,14 @@ header {
 #services ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0;
 }
 
 #services li {
     text-align: center;
-    flex: 1 0 30%; /* Set a basis of 30% for three items per row */
+    flex: 1 0 150px;
     margin: 10px;
 }
 
@@ -162,15 +164,15 @@ header {
 
 @media (max-width: 768px) {
     #services ul {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;
+        justify-content: space-around;
     }
 
     #services li {
-        flex: 1 0 100%; /* Full width for each item */
+        flex: 1 0 45%;
         margin: 10px 0;
     }
 }
+
 
 
 /* About section styles */
