@@ -12,10 +12,22 @@
     width: 100%;
     max-width: 640px;
     margin-bottom: 20px; /* Add some space between form and contact info */
+    overflow: hidden; /* Prevent floating issue */
+}
+
+.contact-form iframe {
+    width: 100%;
+    height: auto;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .contact-info {
     margin-top: 20px;
+    width: 100%;
+    max-width: 640px;
+    text-align: left; /* Align text to the left for readability */
 }
 
 .contact-info ul {
@@ -38,4 +50,12 @@
     vertical-align: middle;
 }
 
-@media (max-width: 768px)
+@media (max-width: 768px) {
+    #contact-form-section {
+        margin: 10px;
+    }
+
+    .contact-form iframe {
+        height: 400px; /* Set a fixed height for smaller screens */
+    }
+}
