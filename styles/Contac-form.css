@@ -1,6 +1,6 @@
 /* Styles for the contact form and contact info */
 
-.contact-section {
+#contact-form-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,13 +8,14 @@
     margin: 20px;
 }
 
-.contact-info {
-    margin-top: 20px;
-}
-
 .contact-form {
     width: 100%;
     max-width: 640px;
+    margin-bottom: 20px; /* Add some space between form and contact info */
+}
+
+.contact-info {
+    margin-top: 20px;
 }
 
 .contact-info ul {
@@ -37,13 +38,4 @@
     vertical-align: middle;
 }
 
-@media (max-width: 768px) {
-    .contact-form iframe {
-        width: 100%;
-        height: auto;
-    }
-
-    .contact-section {
-        margin: 10px;
-    }
-}
+@media (max-width: 768px)
