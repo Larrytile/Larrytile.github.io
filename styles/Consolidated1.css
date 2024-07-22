@@ -136,22 +136,20 @@ header {
 #services ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Enable flex wrap */
     justify-content: space-around;
     padding: 0;
 }
 
 #services li {
     text-align: center;
-    flex: 1 0 21%; /* Adjust the flex-basis to fit 4 items in a row */
-    margin: 10px 10px; /* Adjust margin for spacing */
-    box-sizing: border-box; /* Ensure padding and border are included in width */
+    flex: 1 0 auto;
+    margin: 0 10px;
 }
 
 #services img {
     max-width: 100%;
     height: auto;
-    width: 150px; /* Optional: you can adjust this width based on design preference */
+    width: 150px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -161,22 +159,16 @@ header {
     margin-top: 10px;
 }
 
-/* Media Queries */
+@media (max-width: 768px) {
+    #services {
+        flex-wrap: wrap;
+    }
 
-/* 2x2 layout for tablets and small desktops */
-@media (max-width: 992px) {
     #services li {
-        flex: 1 0 46%; /* Adjust the flex-basis to fit 2 items in a row */
+        flex: 1 0 50%;
+        margin: 10px 0;
     }
 }
-
-/* 1x4 layout for mobile devices */
-@media (max-width: 600px) {
-    #services li {
-        flex: 1 0 100%; /* Adjust the flex-basis to fit 1 item in a row */
-    }
-}
-
 
 /* About section styles */
 #about {
@@ -395,4 +387,179 @@ form button:hover {
 
 .ham-menu span:nth-child(3) {
     top: 75%;
+}
+
+/* Project Details Section Styles */
+#project-details {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#project-details h2 {
+    margin-bottom: 20px;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between thumbnails */
+    margin-bottom: 20px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px; /* Ensure project-item doesn't exceed the image width */
+}
+
+.project-item img {
+    width: 150px; /* Thumbnail width */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    width: 100%; /* Ensure the text stays within the image boundaries */
+    word-wrap: break-word; /* Ensure long words break to fit within the container */
+}
+
+.project-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.video-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the videos */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+.project-video {
+    flex: 1 1 45%; /* Allow videos to take up equal space */
+    display: flex;
+    flex-direction: column; /* Stack video and text vertically */
+    align-items: center; /* Center the content */
+}
+
+.project-video video {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-description {
+    margin-top: 10px; /* Space between the video and text */
+    text-align: center; /* Center the text if desired */
+    width: 100%; /* Ensure the text takes the full width of the container */
+}
+
+/* Media Queries */
+
+/* Stacking images for smaller devices */
+@media (max-width: 768px) {
+    .project-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        max-width: 100%;
+    }
+
+    .project-item img {
+        width: 100%;
+        max-width: 300px; /* Optional: Set a max-width for images */
+    }
+
+    .project-item p {
+        width: 100%;
+    }
+
+    .video-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-video {
+        width: 100%;
+    }
+}
+
+/* Media Queries */
+
+/* Stacking images for smaller devices */
+@media (max-width: 768px) {
+    .project-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item img {
+        width: 100%;
+        max-width: 300px; /* Optional: Set a max-width for images */
+    }
+}
+/* Add this to ensure the header stays on screen */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Added */
+    top: 0; /* Added */
+    width: 100%; /* Added */
+    z-index: 1000; /* Added to ensure the header is above other content */
+}
+
+/* Add padding to the body to prevent content from being hidden under the fixed header */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 80px 20px 20px 20px; /* Amended: added top padding */
+}
+
+/* Adjust hero section padding to account for the fixed header */
+#hero {
+    background-image: url('/images/floor60x60.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    margin-top: 60px; /* Added */
+}
+
+/* New styles for contact form section */
+.contact-form-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
