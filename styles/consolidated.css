@@ -136,14 +136,15 @@ header {
 #services ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
     justify-content: space-around;
     padding: 0;
 }
 
 #services li {
     text-align: center;
-    flex: 1 0 auto;
-    margin: 0 10px;
+    flex: 1 0 30%; /* Set a basis of 30% for three items per row */
+    margin: 10px;
 }
 
 #services img {
@@ -160,15 +161,17 @@ header {
 }
 
 @media (max-width: 768px) {
-    #services {
-        flex-wrap: wrap;
+    #services ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
     }
 
     #services li {
-        flex: 1 0 50%;
+        flex: 1 0 100%; /* Full width for each item */
         margin: 10px 0;
     }
 }
+
 
 /* About section styles */
 #about {
