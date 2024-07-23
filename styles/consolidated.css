@@ -127,7 +127,14 @@ header {
 
 /* Other existing styles */
 
-/* Services section styles */
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Services section styling */
 #services {
     background-color: #fff;
     padding: 20px;
@@ -135,32 +142,40 @@ header {
     text-align: center;
 }
 
+#services h2 {
+    margin-bottom: 20px;
+}
+
 #services ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows items to wrap if needed */
+    justify-content: space-between; /* Adjust spacing between items */
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 #services li {
+    flex: 1 1 calc(25% - 20px); /* Adjust the width of each item (25% of the container minus 20px for spacing) */
+    box-sizing: border-box;
+    margin: 10px; /* Margin around each item */
     text-align: center;
-    flex: 1 0 150px;
-    margin: 10px;
 }
 
 #services img {
-    max-width: 100%;
-    height: auto;
-    width: 150px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensure images are responsive and fit within their containers */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: for rounded corners */
 }
 
-#services span {
-    display: block;
-    margin-top: 10px;
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #services li {
+        flex: 1 1 100%; /* Stack items on top of each other on small screens */
+        margin: 10px 0; /* Adjust margin for stacked layout */
+    }
 }
+
 
 @media (max-width: 768px) {
     #services ul {
