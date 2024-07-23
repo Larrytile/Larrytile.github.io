@@ -1,1 +1,41 @@
+/* Styles for the contact form and contact info */
+#contact-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 800px; /* Increased maximum width for larger screens */
+    margin-bottom: 20px; /* Add some space between form and contact info */
+    overflow: hidden; /* Prevent floating issue */
+}
+
+.contact-form iframe {
+    width: 100%;
+    height: 824px; /* Set a fixed height */
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+@media (max-width: 768px) {
+    #contact-form-section {
+        margin: 10px;
+    }
+
+    .contact-form iframe {
+        height: 500px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form iframe {
+        height: 400px; /* Further adjust height for very small screens */
+    }
+}
 
