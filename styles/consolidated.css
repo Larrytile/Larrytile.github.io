@@ -134,7 +134,7 @@ header {
     box-sizing: border-box;
 }
 
-/* Services section styling */
+/* Services section styles */
 #services {
     background-color: #fff;
     padding: 20px;
@@ -142,38 +142,30 @@ header {
     text-align: center;
 }
 
-#services h2 {
-    margin-bottom: 20px;
-}
-
 #services ul {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap if needed */
-    justify-content: space-between; /* Adjust spacing between items */
     list-style: none;
+    display: flex;
+    justify-content: space-around;
     padding: 0;
-    margin: 0;
 }
 
 #services li {
-    flex: 1 1 calc(25% - 20px); /* Adjust the width of each item (25% of the container minus 20px for spacing) */
-    box-sizing: border-box;
-    margin: 10px; /* Margin around each item */
     text-align: center;
+    flex: 1 0 auto;
+    margin: 0 10px;
 }
 
 #services img {
-    max-width: 100%; /* Ensure images are responsive and fit within their containers */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: for rounded corners */
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    #services li {
-        flex: 1 1 100%; /* Stack items on top of each other on small screens */
-        margin: 10px 0; /* Adjust margin for stacked layout */
-    }
+#services span {
+    display: block;
+    margin-top: 10px;
 }
 
 
