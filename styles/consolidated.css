@@ -559,4 +559,24 @@ body {
     position: relative;
     margin-top: 60px; /* Added */
 }
+.contact-info ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-info ul li a img {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: inherit;
+}
 
