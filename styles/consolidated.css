@@ -277,8 +277,8 @@ header {
 }
 /* Ensure the WhatsApp icon is sized similarly to the Facebook logo */
 .contact-info ul li a img {
-    width: 20px; /* Adjust size as needed */
-    height: 20px; /* Match height to width for a square icon */
+    width: 1em; /* Adjust size as needed */
+    height: 1em; /* Match height to width for a square icon */
     vertical-align: middle;
     margin-right: 10px;
 }
