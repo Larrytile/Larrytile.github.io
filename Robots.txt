@@ -1,0 +1,12 @@
+# Allow all search engines access to the main pages
+User-agent: *
+Disallow: /test-page1.html
+Disallow: /test-page2.html
+Disallow: /test-page3.html
+
+# Allow all search engines to crawl the main site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lttiling.co.uk/sitemap.xml
