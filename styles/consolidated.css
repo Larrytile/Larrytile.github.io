@@ -274,7 +274,14 @@ header {
 .facebook-link:hover img {
     opacity: 0.8;
 }
-
+}
+/* Ensure the WhatsApp icon is sized similarly to the Facebook logo */
+.contact-info ul li a img {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Match height to width for a square icon */
+    vertical-align: middle;
+    margin-right: 10px;
+}
 /* Footer styles */
 footer {
     background-color: #333;
@@ -578,12 +585,5 @@ body {
 
 .contact-info a {
     color: inherit;
-}
-/* Ensure the WhatsApp icon is sized similarly to the Facebook logo */
-.contact-info ul li a img {
-    width: 20px; /* Adjust size as needed */
-    height: 20px; /* Match height to width for a square icon */
-    vertical-align: middle;
-    margin-right: 10px;
-}
+
 
